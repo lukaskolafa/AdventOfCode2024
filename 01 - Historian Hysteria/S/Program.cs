@@ -26,8 +26,8 @@ var rightSorted = right.Order().ToArray();
 
 for (long i = 0; i < allLines.Length; i++)
 {
-    var diff = rightSorted[i] - leftSorted[i];
-
+    var diff = Math.Abs(rightSorted[i] - leftSorted[i]);
+    
     result += diff;
 }
 
